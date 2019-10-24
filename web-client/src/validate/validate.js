@@ -39,16 +39,6 @@ export const isEmpty = (thing) => {
     return empty;
 }
 
-/**
- * Check length of the string greater than
- * @prop String|Integer str
- * @prop boolean|options.trim Trim input before validating
- * @prop number|options.lt Check if length less than lt
- * @prop number|options.lte Check if length is less than or equals to lte
- * @prop number|options.gt Check if length is greater than gt
- * @prop number|options.gte Check if length is greater than or equals to gte
- * @returns Boolean
- */
 export const isLength = (str, options) => {
 
     if (isEmpty(options)) {
