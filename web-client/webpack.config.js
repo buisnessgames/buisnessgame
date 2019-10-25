@@ -29,6 +29,21 @@ module.exports = {
       }
     ]
   },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
+    ],
+  },
 
   // When importing a module whose path matches one of the following, just
   // assume a corresponding global variable exists and use that instead.

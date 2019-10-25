@@ -2,7 +2,8 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 
 // Layout Types
-import { DefaultLayout } from "./layouts";
+import { DefaultLayout } from "./layouts/Default";
+import { LoginLayout } from "./layouts/Login";
 
 // Route Views
 import BlogOverview from "./views/BlogOverview";
@@ -23,7 +24,7 @@ export default [
   },
   {
     path: "/login",
-    layout: DefaultLayout,
+    layout: LoginLayout,
     component: LoginForm
   },
   {
