@@ -80,22 +80,22 @@ class LoginForm extends Component {
         return (
             <div className="Login">
                 <Row>
-                    <form onSubmit={this.login}>
+                    <form onSubmit={this.login} className="form_login">
                         <FormGroup controlId="email" validationState={ formSubmitted ? (errors.email ? 'error' : 'success') : null }>
                             <FormLabel>Email</FormLabel>
                             <FormControl type="text" name="email" placeholder="Enter your email" onChange={this.handleInputChange} />
                         { errors.email &&
-                             <div>{errors.email}</div>
+                             <div className="validate_msg">{errors.email}</div>
                         }
                         </FormGroup>
                         <FormGroup controlId="password" validationState={ formSubmitted ? (errors.password ? 'error' : 'success') : null }>
                             <FormLabel>Password</FormLabel>
                             <FormControl type="password" name="password" placeholder="Enter your password" onChange={this.handleInputChange} />
                         { errors.password &&
-                            <div>{errors.password}</div>
+                            <div className="validate_msg">{errors.password}</div>
                         }
                         </FormGroup>
-                        <Button type="submit" bsStyle="primary">Sign-In</Button>
+                        <Button type="submit">Sign-In</Button>
                     </form>
                 </Row>
             </div>

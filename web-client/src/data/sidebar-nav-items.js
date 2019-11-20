@@ -7,7 +7,7 @@ export default function() {
       htmlAfter: "",
       sub_menu: [
         {
-          title: "Szukaj zleceń",
+          title: "Szukaj zleceń teraz",
           htmlBefore: '<i class="material-icons">note_add</i>',
           to: "/add-new-post"
         },

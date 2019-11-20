@@ -19,7 +19,9 @@ TODO:
 2. In console use ``sudo nano /etc/hosts`` add inside `127.0.0.1 buisnessgame.com`
 3. Go to repositiory catalog -> run ``docker-compose up``
 4. After sucess build - goto `buisnessgame.com`
-5. Login on pass: `admin/abc123`
+5. Login on pass: `admin@admin.com/abc123`
+6. Go on url: buisenssgame.com/blog-posts
+
 
 ```
 If there is problem with database run migrations:
